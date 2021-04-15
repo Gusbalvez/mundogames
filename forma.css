@@ -1,0 +1,188 @@
+body{
+    background-image: url('../Juegos/fondo1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*header*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 15px 30px -22px black;
+    z-index: 2;
+}
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1 b{
+    color: rgb(236, 24, 24);
+}
+.menu{
+    height: 80px;
+}
+.menu nav{
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu nav ul li a{
+    text-decoration: none;
+    color: crimson;
+    transition: color 3000ms;
+}
+.menu nav ul li a:hover{
+    color: blue;
+}
+.menu-selected:before{
+    content:'';
+    width: 100%;
+    height: 4px;
+    background: crimson;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.menu .text-menu-selected{
+    color: black;
+}
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+/*Portada*/
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 80px;
+}
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    color: black;
+    position: left;
+}
+.container-info-cover h1{
+    margin: 10px;
+    color: black;
+}
+.container-info-cover p{
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    margin: 0;
+    padding-top: 50px;
+}
+/*footer*/
+div.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 150px;
+    margin-left: 10;
+    margin-right: auto;
+    align-items: center;
+    padding-top: 30px;
+}
+div.footer{
+    background-image: url('../Juegos/Mangekyou.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sociales{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10;
+    font-size: 40px;
+    border-radius: 100%;
+    
+}
+.sociales li{
+    margin: 0 20px;
+    size: 20;
+}
+.sociales a{
+    text-decoration: none;
+    color: crimson;
+    font-size: large;
+    size: 80px;
+}
+.sociales a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.sociales a:hover i{
+    color: white;
+}
+
+.footer-bottom{
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    bottom: 0;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    font-weight: 200;
+    color: crimson;
+}
