@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>Juegos</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
     <link rel="stylesheet" href="forma.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,47 +21,128 @@
                 <h1>Mundo<b>Games</b></h1>
             </div>
 
-            <div class="menu">
+            <div class="menu" id="show-menu">
                 <nav>
                     <ul>
-                        <li class="menu-selected"><a href="#" class="text-menu-selected">Inicio</a></li>
-                        <li><a href="#">Categoria</a></li>
-                        <li><a href="#">Destacados</a></li>
+                        <li class="menu-selected"><a href="Game.html" class="text-menu-selected"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="./categorias.html"><i class="fas fa-border-none"></i> Categorias</a></li>
+                        <li><a href="./destacados.html"><i class="fas fa-award"></i> Destacados</a></li>
                     </ul>
                 </nav>
             </div>
+            <div id="ctn-icon-search">
+                <i class="fas fa-search" id="icon-search"></i>
+            </div>
         </div>
         <div id="icon-menu">
-            <i class="fas fa-bars"></i>
+            
+            </i><i class="fas fa-bars"></i>
         </div>
 
 
     </header>
+    <div id="ctn-bars-search"><!--barra de busqueda-->
+        <input type="text" id="inputSearch" placeholder="¿Qué estas buscando?">
+        
+        <button class="btn btn-info" id="boton">Buscar</button>
+        <ul id="resultado">
+            
+        </ul>
+    </div>
+    <ul id="box-search">
+        <li><a href="juegos.js"><i class="fas fa-search"></i>Naruto</a></li>
+    </ul>
+
+    <div id="cover-ctn-search"></div>
     <!--portada-->
-    <div class="container-cover">
-        <div class="container-info-cover">
-            <h1>El Mundo de los Games a tus manos</h1>
-            <p>No importa qué tipo de videojuego estás buscando,
+    <div class="container-all" id="move-content">
+        <div class="container-cover">
+            <div class="container-info-cover">
+             <h1>El Mundo de los Games</h1>
+              <p>No importa qué tipo de videojuego estás buscando,
                 ¡MundoGames lo tiene!
                 Hay muchos más títulos para elegir de todos los géneros populares.</p>
+            </div>
         </div>
-    </div>
     <div class="container-content">
-        <article></article>
+
+        <article>
+            <h1>Contenidos</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti pariatur eaque
+                temporibus quia asperiores possimus quibusdam impedit veniam, vero error id sit, 
+                dolor velit perspiciatis architecto odio, molestiae quisquam ipsam. Lorem ipsum,
+                 dolor sit amet consectetur adipisicing elit. Deserunt nostrum nulla dolor facilis 
+                 laborum tempora at mollitia porro molestias, veniam eos nisi quia et ratione consequuntur, 
+                 quae quo nesciunt voluptate!</p>
+
+                 <h1>Sub Contenido</h1>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum perferendis 
+                     doloremque dignissimos! Illum totam obcaecati enim optio rem voluptate nostrum 
+                     adipisci sint atque eaque! Consequuntur blanditiis nobis accusantium modi eum? 
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quidem accusantium 
+                     rerum odit nihil ut maxime ducimus itaque. Excepturi aliquam debitis nesciunt error
+                      suscipit libero nobis fugiat quaerat assumenda voluptatem!</p>
+
+                      <img src="../Juegos/anime.jpg" alt="">
+
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas facilis accusamus 
+                          aut deserunt minus necessitatibus, eos perferendis aperiam tenetur obcaecati! Animi, 
+                          consectetur nemo? Amet repellat vitae deleniti quasi odio nam!</p>
+        </article>
+
+        <div class="container-aside">
+            <aside>
+                <img src="../Juegos/Mob.jpg" alt="">
+                <h2>Mob 100</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint similique 
+                    sit magnam eum nesciunt qui blanditiis delectus laudantium? Quasi maxime,
+                     eligendi ab fugit quo dignissimos repellendus est consequuntur expedita.</p>
+                     <a href=""><button>leer mas</button></a>
+            </aside>
+
+            <aside>
+                <img src="../Juegos/log-horizon.jpg" alt="">
+                <h2>Log Horizon</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint similique 
+                    sit magnam eum nesciunt qui blanditiis delectus laudantium? Quasi maxime,
+                     eligendi ab fugit quo dignissimos repellendus est consequuntur expedita.</p>
+                     <a href=""><button>leer mas</button></a>
+            </aside>
+
+            <aside>
+                <img src="../Juegos/Black-Clover.jpg" alt="">
+                <h2>Blac Clover</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sint similique 
+                    sit magnam eum nesciunt qui blanditiis delectus laudantium? Quasi maxime,
+                     eligendi ab fugit quo dignissimos repellendus est consequuntur expedita.</p>
+                     <a href=""><button>leer mas</button></a>
+            </aside>
+        </div>
+
     </div>
     <!--pie de pagina-->
-    <footer>
-        <div class="footer">
-            <ul class="sociales">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            </ul>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; Todos los derechos reservados | <span>Mundo<b>Games</b></span></p>
-        </div>
-    </footer>
+    <div class="container-footer">
+
+        <footer>
+            <div class="logo-footer">
+                <!--<img src="../Juegos/Mangekyou.jpg" alt="">-->
+            </div>
+                <div class="redes-footer">
+                    
+                <a href="#"><i class="fa fa-facebook icon-redes-footer"></i></a>
+                <a href="#"><i class="fa fa-twitter icon-redes-footer"></i></a>
+                <a href="#"><i class="fa fa-instagram icon-redes-footer"></i></a>
+                <a href="#"><i class="fa fa-youtube icon-redes-footer"></i></a>
+                </div>
+                <hr>
+                    <h4>&copy; Todos los derechos reservados | <span>Mundo<b>Games</b></span></h4>
+                </div>
+         </footer>
+    </div>
+    </div>
+    <script src="../Juegos/juegos.js">
+    
+    </script>
+    
 </body>
 </html>

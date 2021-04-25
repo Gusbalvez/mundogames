@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+    <link rel="stylesheet" href="categoria.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Mundo Juegos</title>
+
+</head>
+<body>
+    
+    
+<!--header menu-->
+<header>
+    <div class="categoria-header-content">
+
+        <div class="logo">
+            <h1>Mundo<b>Games</b></h1>
+        </div>
+
+        <div class="menu" id="show-menu">
+            <nav>
+                <ul>
+                    <li class="menu-selected"><a href="Game.html" class="text-menu-selected"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="/categorias.html"><i class="fas fa-border-none"></i> Categorias</a></li>
+                    <li><a href="destacados.html"><i class="fas fa-award"></i> Destacados</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="ctn-icon-search">
+            <i class="fas fa-search" id="icon-search"></i>
+        </div>
+    </div>
+    <div id="icon-menu">
+        
+        </i><i class="fas fa-bars"></i>
+    </div>
+
+
+</header>
+<div id="ctn-bars-search">
+    <input type="text" id="inputSearch" placeholder="¿Qué estas buscando?">
+</div>
+<ul id="box-search">
+    <li><a href="juegos.js"><i class="fas fa-search"></i>Naruto</a></li>
+</ul>
+
+
+<div id="cover-ctn-search"></div>
+<!--portada-->
+<div class="container-all" id="move-content">
+
+    <div class="categoria-container-cover">
+        <div class="container-info-cover">
+         <h1></h1>
+          <p></p>
+        </div>
+    </div>
+
+    <div class="container-post">
+        <input type="radio" id="Todos" name="Categories" value="Todos" checked>
+        <input type="radio" id="Accion" name="Categories" value="Accion">
+        <input type="radio" id="Aventura" name="Categories" value="Aventura">
+        <input type="radio" id="Carreras" name="Categories" value="Carreras">
+        <input type="radio" id="Deportes" name="Categories" value="Deportes">
+        <input type="radio" id="Disparos" name="Categories" value="Disparos">
+        <input type="radio" id="Lucha" name="Categories" value="Lucha">
+        <input type="radio" id="Rol" name="Categories" value="Rol">
+        <input type="radio" id="Simulacion" name="Categories" value="Simulacion">
+
+        <div class="container-category">
+            <label for="Todos">Todos</label>
+            <label for="Accion">Accion</label>
+            <label for="Aventura">Aventura</label>
+            <label for="Carreras">Carreras</label>
+            <label for="Deportes">Deportes</label>
+            <label for="Disparos">Disparos</label>
+            <label for="Lucha">Lucha</label>
+            <label for="Rol">Rol</label>
+            <label for="Simulacion">Simulacion</label>
+        </div>
+
+        <div class="posts">
+
+            <div class="post" data-category="Aventura">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/SuperMarioBros.jpg" alt="">
+                </div>
+                <h2>Super Mario Bros</h2>
+                <span>Plataformas || Pc, Movil, Consolas(Wii, N3DS, WiiU)</span>
+                <ul class="ctn-tag">
+                    <li>Aventura</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+            <div class="post" data-category="Simulacion Rol">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/TheSims4.jpg" alt="">
+                </div>
+                <h2>The Sims 4</h2>
+                <span>Plataformas || Pc, PlayStation 4, Xbox One</span>
+                <ul class="ctn-tag">
+                    <li>Simulacion</li>
+                    <li>Rol</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+            <div class="post" data-category="Deportes">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/fifa21.jpeg" alt="">
+                </div>
+                <h2>FIFA 21</h2>
+                <span>Plataformas || Pc, PlayStation (3, 4, 5), Xbox</span>
+                <ul class="ctn-tag">
+                    <li>Deportes</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+            <div class="post" data-category="Accion Carreras">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/NeedForSpeedHeat.jpg" alt="">
+                </div>
+                <h2>Need For Speed Heat</h2>
+                <span>Plataformas || Pc, PlayStation 4, Xbox</span>
+                <ul class="ctn-tag">
+                    <li>Accion</li>
+                    <li>Carreras</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+            <div class="post" data-category="Accion Disparos">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/BattlefieldV.jpg" alt="">
+                </div>
+                <h2>BATTTLEFIELD V</h2>
+                <span>Plataformas || Pc, PlayStation 4, Xbox</span>
+                <ul class="ctn-tag">
+                    <li>Disparos</li>
+                    <li>Accion</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+            <div class="post" data-category="Accion Rol">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/DragonAgeInquisition.jpg" alt="">
+                </div>
+                <h2>Dragon Age Inquisition</h2>
+                <span>Plataformas || Pc, PlayStation (3, 4), Xbox</span>
+                <ul class="ctn-tag">
+                    <li>Rol</li>
+                    <li>Accion</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+            <div class="post" data-category="Lucha Rol">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/JumpForce.jpg" alt="">
+                </div>
+                <h2>JUMP FORCE</h2>
+                <span>Plataformas || Pc, PlayStation 4, Xbox</span>
+                <ul class="ctn-tag">
+                    <li>Rol</li>
+                    <li>Lucha</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+            <div class="post" data-category="Lucha">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/MortalKombat11.jpg" alt="">
+                </div>
+                <h2>Mortal Kombat 11</h2>
+                <span>Plataformas || Pc, PlayStation (4, 5), Xbox</span>
+                <ul class="ctn-tag">
+                    <li>Lucha</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+            <div class="post" data-category="Accion Aventura Lucha">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/NarutoShippudenUltimateNinjaStorm4.jpg" alt="">
+                </div>
+                <h2>Naruto Shippūden: Ultimate Ninja Storm 4</h2>
+                <span>Plataformas || Pc, PlayStation 4, Xbox One</span>
+                <ul class="ctn-tag">
+                    <li>Lucha</li>
+                    <li>Accion</li>
+                    <li>Aventura</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+            <div class="post" data-category="Accion Rol">
+                <div class="ctn-img">
+                    <img src="./AppJuegos/XMenLegends.jpg" alt="">
+                </div>
+                <h2>X-Men Legends II: Rise Of Apocalypse</h2>
+                <span>Plataformas || Pc, PlayStation 2, PSP, Xbox</span>
+                <ul class="ctn-tag">
+                    <li>Accion</li>
+                    <li>Rol</li>
+                    <a href="#"><button>Leer más</button></a>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<!--pie de pagina-->
+<div class="categoria-container-footer">
+
+    <footer>
+        <div class="logo-footer">
+    
+        </div>
+            <div class="redes-footer">
+                
+            <a href="#"><i class="fa fa-facebook icon-redes-footer"></i></a>
+            <a href="#"><i class="fa fa-twitter icon-redes-footer"></i></a>
+            <a href="#"><i class="fa fa-instagram icon-redes-footer"></i></a>
+            <a href="#"><i class="fa fa-youtube icon-redes-footer"></i></a>
+            </div>
+            <hr>
+                <h4>&copy; Todos los derechos reservados | <span>Mundo<b>Games</b></span></h4>
+            </div>
+     </footer>
+</div>
+</div>
+<script src="../Juegos/juegos.js">
+
+</script>
+
+</body>
+</html>
